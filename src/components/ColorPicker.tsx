@@ -19,7 +19,7 @@ const ColorPicker = () => {
     try {
       await navigator.clipboard.writeText(color); // Copy color to clipboard
       alert(`Color ${color} copied to clipboard!`);
-    } catch (err) {
+    } catch {
       alert('Failed to copy color!');
     }
   };
